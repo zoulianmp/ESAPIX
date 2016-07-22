@@ -21,10 +21,10 @@ namespace ESAPIX.AppKit
         private StandAloneContext _ctx;
         private bool _showSplash;
 
-        public AppBootstrapper(string vmsUsername, string vmsPassword, bool showSplash = true)
+        public AppBootstrapper(bool showSplash = true)
         {
             _showSplash = showSplash;
-            _ctx = StandAloneContext.Create(vmsUsername, vmsPassword);
+            _ctx = StandAloneContext.Create();
             _ea = new EventAggregator();
         }
 

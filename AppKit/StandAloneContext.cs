@@ -32,13 +32,13 @@ namespace ESAPIX.AppKit
         /// <param name="username">VMS username</param>
         /// <param name="password">VMS password</param>
         /// <returns>app context</returns>
-        public static StandAloneContext Create(string username, string password)
+        public static StandAloneContext Create()
         {
             var thread = new AppComThread();
             Application app = null;
             thread.Invoke(() =>
             {
-                app = Application.CreateApplication(username, password);
+                app = Application.CreateApplication();
             });
             return new StandAloneContext(app, thread);
         }
