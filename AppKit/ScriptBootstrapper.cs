@@ -50,10 +50,11 @@ namespace ESAPIX.AppKit
             _frame.Continue = false;
         }
 
-        public new void Run()
+        public new void Run(Func<Window> getSplash = null)
         {
             Thread ui = new Thread(() =>
             {
+                if (getSplash != null) { getSplash().ShowDialog(); }
                 base.Run();
             });
             ui.SetApartmentState(ApartmentState.STA);

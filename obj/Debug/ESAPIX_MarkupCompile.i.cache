@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\Debug\
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\
 ESAPIX
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 3-1744511215
 
-32140003459
-74-154763396
+321036630223
+241204198716
 AppKit\Overlay\SelectPatient.xaml;AppKit\Splash\SplashScreen.xaml;Styles\UAB_Styles.xaml;
 
 False

@@ -12,6 +12,7 @@ using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Practices.Unity;
 using ESAPIX.AppKit.Overlay;
+using System.Windows.Threading;
 
 namespace ESAPIX.AppKit
 {
@@ -19,11 +20,9 @@ namespace ESAPIX.AppKit
     {
         private EventAggregator _ea;
         private StandAloneContext _ctx;
-        private bool _showSplash;
 
-        public AppBootstrapper(bool showSplash = true)
+        public AppBootstrapper()
         {
-            _showSplash = showSplash;
             _ctx = StandAloneContext.Create();
             _ea = new EventAggregator();
         }
@@ -62,9 +61,16 @@ namespace ESAPIX.AppKit
             shell.ShowDialog();
         }
 
-        public new void Run()
+
+        public new void Run(Func<Window> getSplash = null)
         {
-            if (_showSplash) { Splasher.ShowSplash(); }
+            if (getSplash != null)
+            {
+                Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
+                {
+                    getSplash().ShowDialog();
+                }));
+            }
             base.Run();
         }
 

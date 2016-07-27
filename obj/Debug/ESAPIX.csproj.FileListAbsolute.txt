@@ -99,3 +99,13 @@ C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\Debug\AppKit\Overlay\Select
 C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\Debug\AppKit\Splash\SplashScreen.baml
 C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\Debug\AppKit\Overlay\SelectPatient.g.cs
 C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\Debug\AppKit\Splash\SplashScreen.g.cs
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\ESAPIX.csprojResolveAssemblyReference.cache
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\AppKit\Overlay\SelectPatient.baml
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\AppKit\Splash\SplashScreen.baml
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\Styles\UAB_Styles.baml
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\AppKit\Overlay\SelectPatient.g.cs
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\AppKit\Splash\SplashScreen.g.cs
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\ESAPIX_MarkupCompile.cache
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\ESAPIX.g.resources
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\ESAPIX.dll
+\\server\va_data$\workshop\demos\ESAPIX\obj\Debug\ESAPIX.pdb
