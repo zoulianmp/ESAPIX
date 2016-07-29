@@ -1,4 +1,5 @@
-﻿using ESAPIX.Interfaces;
+﻿using ESAPIX.Helpers;
+using ESAPIX.Interfaces;
 using Microsoft.Practices.Unity;
 using Prism.Events;
 using Prism.Unity;
@@ -24,6 +25,7 @@ namespace ESAPIX.AppKit
 
         public ScriptBootstrapper(PluginContext ctx, DispatcherFrame frame)
         {
+            XamlAssemblyLoader.LoadAssemblies();
             _sc = ctx;
             _ea = new EventAggregator();
             _frame = frame;

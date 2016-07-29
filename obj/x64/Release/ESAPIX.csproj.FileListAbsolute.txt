@@ -53,3 +53,14 @@ C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\x64\Release\ESAPIX_MarkupCo
 C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\x64\Release\ESAPIX.g.resources
 C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\x64\Release\ESAPIX.dll
 C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\obj\x64\Release\ESAPIX.pdb
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\Microsoft.Expression.Interactions.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\rcardan\OneDrive\Cardan.Code\Git\ESAPIX\bin\x64\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll

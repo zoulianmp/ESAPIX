@@ -51,6 +51,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
@@ -129,7 +130,7 @@
     <Compile Include="Extensions\VVectorExtensions.cs" />
     <Compile Include="Helpers\MathHelper.cs" />
     <Compile Include="AppKit\ScriptComThread.cs" />
-    <Compile Include="Helpers\ScriptContextHelper.cs" />
+    <Compile Include="Helpers\XamlAssemblyLoader.cs" />
     <Compile Include="AppKit\AppComThread.cs" />
     <Compile Include="Interfaces\IScriptContext.cs" />
     <Compile Include="Interfaces\IVMSThread.cs" />
