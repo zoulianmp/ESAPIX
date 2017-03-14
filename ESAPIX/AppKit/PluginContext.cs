@@ -19,19 +19,9 @@ namespace ESAPIX.AppKit
 
         public PluginContext(ScriptContext ctx, Window w) { _ctx = ctx; Thread = new ScriptComThread(w.Dispatcher); }
 
-        public string ApplicationName { get { return _ctx?.ApplicationName; } }
-
-        public BrachyPlanSetup BrachyPlanSetup { get { return _ctx?.BrachyPlanSetup; } }
-
-        public IEnumerable<BrachyPlanSetup> BrachyPlansInScope { get { return _ctx?.BrachyPlansInScope; } }
-
         public Course Course { get { return _ctx?.Course;  } }
 
         public User CurrentUser { get { return _ctx?.CurrentUser; } }
-
-        public ExternalPlanSetup ExternalPlanSetup { get { return _ctx?.ExternalPlanSetup; } }
-
-        public IEnumerable<ExternalPlanSetup> ExternalPlansInScope { get { return _ctx?.ExternalPlansInScope; } }
 
         public Image Image { get { return _ctx?.Image; } }
 

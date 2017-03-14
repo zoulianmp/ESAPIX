@@ -12,11 +12,6 @@ namespace ESAPIX.Interfaces
     /// </summary>
     public interface IScriptContext
     {
-        string ApplicationName { get; }
-
-        BrachyPlanSetup BrachyPlanSetup { get; }
-
-        IEnumerable<BrachyPlanSetup> BrachyPlansInScope { get;}
 
         User CurrentUser { get; }
 
@@ -25,10 +20,6 @@ namespace ESAPIX.Interfaces
         Image Image { get; }
 
         Patient Patient { get; }
-
-        ExternalPlanSetup ExternalPlanSetup { get; }
-
-        IEnumerable<ExternalPlanSetup> ExternalPlansInScope { get; }
 
         PlanSetup PlanSetup { get; }
 

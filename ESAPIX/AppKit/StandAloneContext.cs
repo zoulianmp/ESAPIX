@@ -17,8 +17,6 @@ namespace ESAPIX.AppKit
         private Course _course;
         private Patient _patient;
         private PlanSetup _planSetup;
-        private BrachyPlanSetup _brachyPlanSetup;
-        private ExternalPlanSetup _exPlanSetup;
 
         public StandAloneContext(Application app, IVMSThread thread)
         {
@@ -98,26 +96,6 @@ namespace ESAPIX.AppKit
             return _planSetup != null;
         }
 
-        public bool SetExternalPlanSetup(ExternalPlanSetup ex)
-        {
-            _planSetup = ex;
-            _exPlanSetup = ex;
-            //Notify
-            OnExternalPlanSetupChanged(ex);
-            OnPlanSetupChanged(ex);
-            return _exPlanSetup != null;
-        }
-
-        public bool SetBrachyPlanSetup(BrachyPlanSetup bs)
-        {
-            _planSetup = bs;
-            _brachyPlanSetup = bs;
-            //Notify
-            OnBrachyPlanSetupChanged(bs);
-            OnPlanSetupChanged(bs);
-            return _brachyPlanSetup != null;
-        }
-
         public void ClosePatient()
         {
             Thread.Invoke(() =>
@@ -155,14 +133,6 @@ namespace ESAPIX.AppKit
 
         public string ApplicationName { get; set; } = "VMS Application";
 
-        public BrachyPlanSetup BrachyPlanSetup { get { return _brachyPlanSetup; } }
-
-        public IEnumerable<BrachyPlanSetup> BrachyPlansInScope { get { return _course?.BrachyPlanSetups; } }
-
-        public ExternalPlanSetup ExternalPlanSetup { get { return _exPlanSetup; } }
-
-        public IEnumerable<ExternalPlanSetup> ExternalPlansInScope { get { return _course?.ExternalPlanSetups; } }
-
         #region CONTEXT CHANGED EVENTS
         public delegate void PatientChangedHandler(Patient newPatient);
         public event PatientChangedHandler PatientChanged;
@@ -171,14 +141,6 @@ namespace ESAPIX.AppKit
         public delegate void PlanSetupChangedHandler(PlanSetup ps);
         public event PlanSetupChangedHandler PlanSetupChanged;
         public void OnPlanSetupChanged(PlanSetup ps) => PlanSetupChanged?.Invoke(ps);
-
-        public delegate void ExternalPlanSetupChangedHandler(ExternalPlanSetup ps);
-        public event ExternalPlanSetupChangedHandler ExternalPlanSetupChanged;
-        public void OnExternalPlanSetupChanged(ExternalPlanSetup ps) => ExternalPlanSetupChanged?.Invoke(ps);
-
-        public delegate void BrachyPlanSetupChangedHandler(BrachyPlanSetup ps);
-        public event PlanSetupChangedHandler BrachyPlanSetupChanged;
-        public void OnBrachyPlanSetupChanged(BrachyPlanSetup ps) => BrachyPlanSetupChanged?.Invoke(ps);
 
         public delegate void CourseChangedHandler(Course c);
         public event CourseChangedHandler CourseChanged;
